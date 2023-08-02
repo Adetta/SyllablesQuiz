@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">SyllablesQuiz</string>
+    <string name="hint_text">Собери слово из слогов.</string>
 </resources>
