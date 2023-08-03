@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout  xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/relativeLayout"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity"
-    android:id="@+id/relativeLayout">
+    tools:context=".MainActivity">
 
     <TextView
         android:id="@+id/text"
@@ -22,21 +22,31 @@
 
     <ImageView
         android:id="@+id/imageView"
-        android:layout_below="@id/text"
-        android:padding="10dp"
         android:layout_width="wrap_content"
         android:layout_height="250dp"
+        android:layout_below="@id/text"
         android:layout_centerHorizontal="true"
+        android:padding="10dp"
         app:srcCompat="@drawable/polate"
         tools:layout_editor_absoluteX="79dp"
         tools:layout_editor_absoluteY="105dp" />
 
-    <LinearLayout
+    <TextView
+        android:id="@+id/tv_answer"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="@color/black"
         android:layout_below="@id/imageView"
-        android:id="@+id/liner1">
+        android:layout_centerHorizontal="true"
+        android:textAlignment="center"
+        android:textColor="#FF1744"
+        android:textSize="40sp" />
+
+    <LinearLayout
+        android:id="@+id/liner1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_answer"
+        android:background="@color/black">
 
         <Button
             android:id="@+id/button1"
@@ -45,14 +55,15 @@
             android:layout_marginStart="20sp"
             android:layout_marginTop="20sp"
             android:text="БЕЛ" />
+
         <Button
             android:id="@+id/button2"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="КА"
-            android:layout_marginRight="20sp"
             android:layout_marginLeft="20sp"
-            android:layout_marginTop="20sp" />
+            android:layout_marginTop="20sp"
+            android:layout_marginRight="20sp"
+            android:text="КА" />
 
         <Button
             android:id="@+id/button3"
@@ -69,8 +80,8 @@
         android:layout_height="wrap_content"
         android:layout_below="@+id/liner1"
         android:layout_marginLeft="20sp"
-        android:layout_marginRight="50sp"
         android:layout_marginTop="50dp"
+        android:layout_marginRight="50sp"
         android:text="Button4" />
 
     <Button
@@ -80,6 +91,8 @@
         android:layout_below="@+id/liner1"
         android:layout_marginTop="50sp"
         android:layout_toEndOf="@+id/button4"
-        android:text="Button" />
+        android:text="Button5" />
+
+
 
 </RelativeLayout>

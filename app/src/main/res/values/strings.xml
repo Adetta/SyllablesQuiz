@@ -1,4 +1,6 @@
 <resources>
     <string name="app_name">SyllablesQuiz</string>
     <string name="hint_text">Собери слово из слогов.</string>
+    <string name="hint_text2">Слова закончились!</string>
+    <string name="success">МОЛОДЕЦ!</string>
 </resources>
